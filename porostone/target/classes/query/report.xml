@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper   
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+      
+<mapper namespace="kr.co.porostone.contents.report.daosImle">  
+ 
+<select id="selectScheduleCnt" parameterType="map" resultType="int">
+/* selectScheduleList */
+	SELECT
+        COUNT(1)
+	FROM schedule_mst
+	WHERE USEFLAG = #{useflag}
+	<if test='division != null  and division != ""'>
+		and DIVISION	=	#{division}
+ 	</if>
+ 	ORDER BY SCHEDULE_SEQ ASC
+	
+</select>
+
+
+</mapper>
+

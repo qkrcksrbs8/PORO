@@ -27,8 +27,6 @@ public class LoginCheckInterceptor extends HandlerInterceptorAdapter {
 		}
 		
 		if (request.getSession().getAttribute("userId") == null) {
-			//response.sendRedirect("/");
-			//return false;
 			return true;
 		} else {
 			return true;

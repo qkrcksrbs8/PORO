@@ -1,9 +1,12 @@
 package kr.co.porostone.comm.login.controllers;
 
 import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
+import java.util.Random;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -40,8 +43,26 @@ public class LoginController {
 		ModelAndView mav = new ModelAndView();	
 		session.setAttribute("loginInfo", "loginok");
 		session.setAttribute("userId", "test");
-		session.setAttribute("companyCode", "12467");
+		session.setAttribute("TRS_NO", getTrsNo());
 		mav.setViewName("redirect:/main");		
 		return mav;
+	}
+	
+	public static synchronized String getTrsNo() {
+		Random rand = new Random();
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmssSSS");
+		Calendar cal = Calendar.getInstance();
+		
+		Date date = cal.getTime();
+		
+		int rnum = rand.nextInt(100);
+		String rnumStr = String.valueOf(rnum);
+		int len = rnumStr.length();
+		
+		for (int i = 0; i < 2 - len; i++) {
+			rnumStr = "0" + rnumStr;
+		}
+		String trsNo = "9999" + sdf.format(date) + rnumStr;
+		return trsNo;
 	}
 }

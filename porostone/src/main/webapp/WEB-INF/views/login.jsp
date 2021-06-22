@@ -8,7 +8,7 @@
 <div class="con">
 	<div>
 		<div class="title center"><img src="<%=request.getContextPath()%>/resources/img/login_logo.png" /></div>
-		<div class="title_des center">관리비 ERP 시스템</div>
+		<div class="title_des center">PORO_STONE</div>
 	</div>
 	<div>
 		<div id="loginbox_con">

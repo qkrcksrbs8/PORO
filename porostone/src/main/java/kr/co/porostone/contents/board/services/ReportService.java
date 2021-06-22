@@ -1,4 +1,4 @@
-package kr.co.porostone.contents.report.services;
+package kr.co.porostone.contents.board.services;
 
 import java.io.File;
 import java.io.FileInputStream;

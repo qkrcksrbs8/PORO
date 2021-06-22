@@ -16,7 +16,7 @@
 	</bean>
 	
 	<bean id="loginDao" class="org.mybatis.spring.mapper.MapperFactoryBean">
-		<property name="mapperInterface" value="kr.co.porostone.contents.report.daos.ReportDao" />
+		<property name="mapperInterface" value="kr.co.porostone.contents.board.daos.ReportDao" />
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
 	</bean>
 	

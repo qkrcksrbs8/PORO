@@ -1,4 +1,4 @@
-package kr.co.porostone.contents.report.domains;
+package kr.co.porostone.contents.board.domains;
 
 public class ContractMstVO {
 

@@ -1,4 +1,4 @@
-package kr.co.porostone.contents.report.daos;
+package kr.co.porostone.contents.board.daos;
 
 import java.util.List;
 import java.util.Map;

@@ -29,7 +29,7 @@ if(color != ''){
 	<div id="logo" onclick="javascript:location.href='<%=request.getContextPath()%>/main'">
 		<p class="logo_icon"><img src="<%=request.getContextPath()%>/resources/img/logo_icon.png" /></p>
 		<p class="logo_txt"><img src="<%=request.getContextPath()%>/resources/img/logo_txt.png" /></p>
-		<p class="logo_des">관리비 관리 시스템</p>
+		<p class="logo_des">POROSTONE</p>
 	</div>
 	
 	<div class="header_logout" onclick="javascript:location.href='<%=request.getContextPath()%>/logout'">
@@ -37,28 +37,8 @@ if(color != ''){
 	</div>
 	
 	<ul class="menu">
-		<li>
-			<a href="#">연간관리데이터보고서</a>
-			<ul> 
-				<li><a href="<%=request.getContextPath()%>/scheduleList">연간스케쥴</a></li>
-				<li><a href="<%=request.getContextPath()%>/detailedWorkList">세부업무실적</a></li>
-				<li><a href="<%=request.getContextPath()%>/repairList">하자보수현황</a></li>
-				<li><a href="<%=request.getContextPath()%>/contractList">주요계약현황</a></li>
-				<li><a href="<%=request.getContextPath()%>/paymentStatusList">설비및수불현황</a></li>
-				<li><a href="<%=request.getContextPath()%>/liftList">시설물점검현황</a></li>
-				<li><a href="<%=request.getContextPath()%>/trainingList">교육현황</a></li>
-				<li><a href="<%=request.getContextPath()%>/meetingLogList">관리단회의록</a></li>
-			</ul>
-		</li>
 		<li>  
-			<a href="#">참조퍼블</a>
-			<ul> 
-				<li><a href="<%=request.getContextPath()%>/mres0103">mres0103</a></li>
-				<li><a href="<%=request.getContextPath()%>/mres0201">mres0201</a></li>
-				<li><a href="<%=request.getContextPath()%>/mres0206">mres0206</a></li>
-				<li><a href="<%=request.getContextPath()%>/mres0602">mres0602</a></li>
-				<li><a href="<%=request.getContextPath()%>/mres0707">mres0707</a></li>
-			</ul>
+			<a href="<%=request.getContextPath()%>/poroBoard">게시판</a>
 		</li>
 	</ul>
 </nav>

@@ -5,7 +5,7 @@
 <tiles-definitions>     
 
 	<definition name="tilesLogin" template="/WEB-INF/tiles/layout/login_layout.jsp">   
-	    <put-attribute name="title" value="MRES 관리비관리" />             
+	    <put-attribute name="title" value="PORO STONE" />             
 	    <put-attribute name="body" value="" />       
 	</definition>       
 	
@@ -15,7 +15,7 @@
 	</definition>
 	
 	<definition name="tilesMain" template="/WEB-INF/tiles/layout/main_layout.jsp">   
-	    <put-attribute name="title" value="MRES 관리비관리" />        
+	    <put-attribute name="title" value="PORO STONE" />        
 	    <put-attribute name="header" value="/WEB-INF/tiles/layout/header.jsp" />     
 	    <put-attribute name="subTitle" value="/WEB-INF/tiles/layout/sub_title.jsp" />  
 	    <put-attribute name="body" value="" />       
@@ -28,7 +28,7 @@
 	
 	<!-- print -->
 	<definition name="tilesPrint" template="/WEB-INF/tiles/layout/print_layout.jsp">    
-	    <put-attribute name="title" value="MRES" />             
+	    <put-attribute name="title" value="PORO STONE" />             
 	    <put-attribute name="body" value="" />   
 	</definition>
 	

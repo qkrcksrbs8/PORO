@@ -28,7 +28,7 @@ import javax.servlet.http.HttpSession;
 
 
 @Controller
-public class ReportController {
+public class BoardController {
 
 	protected Logger logger = LoggerFactory.getLogger(getClass());
 	@RequestMapping(value = "/main", method = { RequestMethod.GET, RequestMethod.POST })
@@ -37,8 +37,11 @@ public class ReportController {
 	}
 	
 	@RequestMapping(value = "/poroBoard", method = { RequestMethod.GET, RequestMethod.POST })
-	public String poroBoard(Locale locale, Model model) {
-		logger.info("!!!!");
+	public String poroBoard(Locale locale, Model model, HttpSession session) {
+		logger.info("====================================START====================================");
+		logger.info("SESS_GUID = ["+session.getAttribute("TRS_NO")+"], [boardList]"); 
+
+		logger.info("====================================E N D====================================");
 		 return "contents/board/poroBoard.tiles";
 	}
 

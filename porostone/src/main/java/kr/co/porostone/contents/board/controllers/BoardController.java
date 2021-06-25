@@ -28,6 +28,9 @@ public class BoardController {
 		logger.info("TRS_NO = ["+session.getAttribute("TRS_NO")+"], [boardList]"); 
 		ModelAndView  mav = new ModelAndView("contents/board/poroBoard.tiles");//연간스케쥴 model
 
+	
+		
+		
 		logger.info("====================================E N D====================================");
 		return mav;
 	}

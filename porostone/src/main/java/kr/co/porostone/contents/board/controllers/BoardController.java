@@ -30,7 +30,7 @@ public class BoardController {
 
 		//AOP 구현 전
 		//메서드 추가
-		
+		//스트래티지 패턴
 		
 		logger.info("====================================E N D====================================");
 		return mav;

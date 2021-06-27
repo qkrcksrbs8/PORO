@@ -29,7 +29,7 @@ public class BoardController {
 		ModelAndView  mav = new ModelAndView("contents/board/poroBoard.tiles");//연간스케쥴 model
 
 		//AOP 구현 전
-	
+		//메서드 추가
 		
 		
 		logger.info("====================================E N D====================================");
